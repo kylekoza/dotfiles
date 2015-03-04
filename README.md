@@ -125,7 +125,7 @@ Mail
 		Display unread messages with bold font
 		Do not load remote content
 	Mark addresses not ending in gatech.edu
-	Send new messages from kyle.koza@oit.gatech.edu
+	Send new messages from
 	Use the same message format as the original
 	Assign signatures to exchange
 
