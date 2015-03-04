@@ -95,6 +95,7 @@ change Downloads to display as folder
 change Application to display as folder
 
 Install Adblock Plus
+Install Cisco AnyConnect
 
 ———————
 Application setup
