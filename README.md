@@ -130,4 +130,5 @@ Mail
 	Use the same message format as the original
 	Assign signatures to exchange
 
-
+Keychain Access
+    Show keychain status in menu bar
