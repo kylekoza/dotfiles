@@ -79,6 +79,7 @@ fi
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias gtwhois="whois -h who.is.gatech.edu $1"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Fix numeric keypad
