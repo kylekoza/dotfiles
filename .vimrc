@@ -212,7 +212,7 @@ if exists(':Plugin')
 
   " Some additional plugins
   Plugin 'scrooloose/nerdcommenter'
-  Plugin 'Lokaltog/powerline'
+  Plugin 'powerline/powerline'
   "Plugin 'lervag/vim-latex'
   Plugin 'terryma/vim-expand-region'
 
@@ -243,6 +243,7 @@ syntax on
 
 " Turns on gitgutter signs
 let g:gitgutter_signs = 1
+let g:Powerline_symbols = 'fancy'
 
 " Display line numbers
 set number
@@ -310,7 +311,7 @@ set nohlsearch    " don't highlight matches
 set ignorecase    " searches are case insensitive...
 set smartcase     " ... unless they contain at least one capital letter
 
-set laststatus=1  " always show the status line
+set laststatus=2  " always show the status line
 set ruler         " show cursor position (overridden by statusline)
 set showcmd       " show partial command in bottom-right
 set showtabline=1 " Show tabline only when more than one tab exists
