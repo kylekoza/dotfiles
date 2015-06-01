@@ -54,7 +54,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
 export WORKON_HOME=~/Envs
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -67,6 +68,8 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='mvim'
 fi
+
+export HOMEBREW_BUILD_FROM_SOURCE=1
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
