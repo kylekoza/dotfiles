@@ -288,13 +288,13 @@ set fileformats+=mac   " should already be the default when compiled on mac
 
 " Write swap and backup files in the event of a crash or accident
 set swapfile
-set directory=$TMPDIR,~/tmp,~/.vim/tmp,/tmp,/var/tmp
+set directory=$HOME/.vim/.backup
 set backup
-set backupdir=$TMPDIR,~/tmp,~/.vim/tmp,/tmp,/var/tmp
+set backupdir=$HOME/.vim/.backup
 
 " Extend our undoable steps and preserve over restart (if available)
 if has('persistent_undo')
-  set undodir=$TMPDIR,~/tmp,~/.vim/tmp,/tmp,/var/tmp
+  set undodir=$HOME/.vim/undo
   set undofile
   set undoreload=10000
 end
