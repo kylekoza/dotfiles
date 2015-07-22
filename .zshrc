@@ -56,7 +56,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-export WORKON_HOME=~/Envs
+export WORKON_HOME=$HOME/Envs
+
+export PYTHONSTARTUP=$HOME/.pythonrc
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -113,3 +115,6 @@ bindkey -s "^[Oo" "/"
 # Fix history substring search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+PERL_MB_OPT="--install_base \"/Users/kylekoza/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/kylekoza/perl5"; export PERL_MM_OPT;
