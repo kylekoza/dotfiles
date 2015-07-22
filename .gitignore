@@ -1,0 +1,12 @@
+.vim/undo/
+.vim/.backup/
+.gnupg/
+.DS_Store
+Applications/
+Desktop/
+Documents/
+Downloads/
+Movies/
+Music/
+Pictures/
+Public/
