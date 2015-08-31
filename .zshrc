@@ -84,9 +84,9 @@ export HOMEBREW_BUILD_FROM_SOURCE=1
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias gtwhois="whois -h who.is.gatech.edu $1"
+alias ls="ls -lah"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Fix numeric keypad
