@@ -162,7 +162,7 @@ if exists(':Plugin')
   "   Run current test file <leader>r
   "   Run nearest test in file <leader>R
   " https://github.com/skalnik/vim-vroom
-  Plugin 'skalnik/vim-vroom'
+  " Plugin 'skalnik/vim-vroom'
 
   " Syntax checker for many languages
   " https://github.com/scrooloose/syntastic
@@ -301,8 +301,8 @@ end
 set undolevels=10000
 
 set autoindent   " preserve indent level on newlines
-set tabstop=4    " a tab is two spaces
-set shiftwidth=4 " an autoindent (with <<) is two spaces
+set tabstop=4    " a tab is four spaces
+set shiftwidth=4 " an autoindent (with <<) is four spaces
 set expandtab    " use spaces, not tabs
 set smarttab     " use shiftwidth/tabstop based on context
 
@@ -344,6 +344,12 @@ if exists('$TMUX')
 else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
+
+" Set colorscheme
+if has("gui_running")
+  set background=dark
+  colorscheme solarized
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
