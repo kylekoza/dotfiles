@@ -71,6 +71,7 @@ else
 fi
 
 export HOMEBREW_BUILD_FROM_SOURCE=1
+export HOMEBREW_NO_ANALYTICS=1
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
