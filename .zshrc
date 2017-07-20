@@ -49,11 +49,11 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git brew osx terminalapp python github screen vi-mode vundle web-search history-substring-search vagrant brew-cask nmap)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/bin/virtualenvwrapper.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$(brew --prefix)/opt/python/libexec/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+source /usr/local/bin/virtualenvwrapper.sh
 
 export WORKON_HOME=$HOME/Envs
 
