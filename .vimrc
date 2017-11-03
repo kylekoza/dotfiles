@@ -28,28 +28,6 @@ if exists(':Plugin')
   " https://github.com/tpope/vim-surround
   Plugin 'tpope/vim-surround'
 
-  " Unimpaired.vim provides shortcuts for various paired activities:
-  "
-  " ex cmds: ]q is :cnext, [q is :cprevious. ]b is :bnext, [b is :bprev.
-  " See the documentation for the full set of 20 mappings and mnemonics.
-  " All of them take a count.
-  "
-  " lines: [<Space> and ]<Space> add newlines before and after the
-  " cursor line. [e and ]e exchange the current line with the one above
-  " or below it.
-  "
-  " toggling options: [os, ]os, and cos perform :set spell, :set
-  " nospell, and :set invspell, respectively. There's also l (list), n
-  " (number), w (wrap), x (cursorline cursorcolumn), and several others,
-  " plus mappings to help alleviate the set paste dance. Consult the
-  " documentation.
-  "
-  " misc: [f and ]f to go to the next/previous file in the directory,
-  " and [n and ]n to jump between SCM conflict markers.
-  "
-  " https://github.com/tpope/vim-unimpaired
-  Plugin 'tpope/vim-unimpaired'
-
   " Eunuch.vim adds wrappers for various Unix commands
   " e.g., :Remove will rm the current file & delete the buffer
   "       :Move will rename both the buffer and file simultaneously
@@ -80,14 +58,6 @@ if exists(':Plugin')
   " https://github.com/jeetsukumaran/vim-buffergator
   Plugin 'jeetsukumaran/vim-buffergator'
 
-  " CtrlP.vim is a fuzzy file, buffer, mru, tag, etc finder.
-  " Open with CTRL-P, then:
-  "   Press <c-f> and <c-b> to cycle between modes.
-  "   Press <c-d> to switch to filename only search instead of full path.
-  "   Press <c-r> to switch to regexp mode.
-  " https://github.com/kien/ctrlp.vim
-  Plugin 'kien/ctrlp.vim'
-
   " A Vim plugin which shows a git diff in the gutter (sign column) and
   " stages/reverts hunks. Use [c and ]c to navigate changes.
   " https://github.com/airblade/vim-gitgutter
@@ -105,33 +75,6 @@ if exists(':Plugin')
   " https://github.com/godlygeek/tabular
   Plugin 'godlygeek/tabular'
 
-  " This allows you to select some text using Vim's visual mode and then hit *
-  " and # to search for it elsewhere in the file.  For example, hit V, select
-  " a strange sequence of characters like '$! $!', and hit star.  You'll find
-  " all other runs of '$! $!' in the file.
-  "
-  " If you hit <leader>* ('\*' unless you changed the mapleader), vim will
-  " recursively vimgrep for the word under the cursor or the visual selection.
-  "
-  " Vim's default behavior is to just extend the visual selection to the next
-  " word that matches the word under the cursor. Doesn't seem very useful.
-  " https://github.com/nelstrom/vim-visual-star-search
-  Plugin 'nelstrom/vim-visual-star-search'
-
-  " Vim global plugin for dragging virtual blocks. By Damien Conway.
-  " Select text in Visual Block mode (ctrl-v), use arrow keys to move it around!
-  " https://github.com/rdlugosz/vim-dragvisuals
-  Plugin 'rdlugosz/vim-dragvisuals'
-
-  " Display your undo history in a graph. Mapped to <leader>u.
-  " https://github.com/mbbill/undotree
-  Plugin 'mbbill/undotree'
-
-  " Indent Guides is a plugin for visually displaying indent levels in Vim.
-  " Toggle with <leader>ig
-  " https://github.com/nathanaelkane/vim-indent-guides
-  Plugin 'nathanaelkane/vim-indent-guides'
-
   " Provides extra text objects for things like pairs, quotes, separators and
   " arguments.
   "   Pairs      i( i) ib i{ i} iB i[ i] i< i> it
@@ -143,26 +86,10 @@ if exists(':Plugin')
   " https://github.com/wellle/targets.vim
   Plugin 'wellle/targets.vim'
 
-  " Creates a new text object 'i' for indentation. E.g.,
-  "   vii will select block of text at current indent level
-  "   vai will select block of text at current indent level, plus line above
-  "   vaI selects block of text at current indent level, plus line above & below
-  " http://www.vim.org/scripts/script.php?script_id=3037
-  Plugin 'michaeljsmith/vim-indent-object'
-
-  " The Rake.vim plugin does the same thing for non-Rails projects.
-  Plugin 'tpope/vim-rake'
-
   " endwise.vim: wisely add 'end' in ruby, endfunction/endif/more in vim
   " script, etc.
   " https://github.com/tpope/vim-endwise
   Plugin 'tpope/vim-endwise'
-
-  " Runs Ruby tests in a reasonably smart way.
-  "   Run current test file <leader>r
-  "   Run nearest test in file <leader>R
-  " https://github.com/skalnik/vim-vroom
-  " Plugin 'skalnik/vim-vroom'
 
   " Syntax checker for many languages
   " https://github.com/scrooloose/syntastic
@@ -175,46 +102,31 @@ if exists(':Plugin')
   " https://github.com/AndrewRadev/splitjoin.vim
   Plugin 'AndrewRadev/splitjoin.vim'
 
-  " SnipMate aims to provide support for textual snippets, similar to TextMate
-  " or other Vim plugins. Activate by typing some text and hitting <tab>.
-  " Snipmate depends on tlib and mw-utils.
-  " https://github.com/garbas/vim-snipmate
-  Plugin 'tomtom/tlib_vim'
-  Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'garbas/vim-snipmate'
-  Plugin 'honza/vim-snippets'
-
   " Vim Airline improves the look & functionality of the statusline.
   " It's so fancy!
   " https://github.com/bling/vim-airline
   Plugin 'bling/vim-airline'
 
   " Language syntax support
-  Plugin 'vim-ruby/vim-ruby'
-  Plugin 'kchmck/vim-coffee-script'
+  "Plugin 'vim-ruby/vim-ruby'
+  "Plugin 'kchmck/vim-coffee-script'
   Plugin 'pangloss/vim-javascript'
   Plugin 'tpope/vim-markdown'
   Plugin 'tpope/vim-git'
-  Plugin 'tpope/vim-haml' "includes Haml, Sass and SCSS
-  Plugin 'elixir-lang/vim-elixir'
+  "Plugin 'tpope/vim-haml' "includes Haml, Sass and SCSS
+  "Plugin 'elixir-lang/vim-elixir'
   Plugin 'ap/vim-css-color'
   Plugin 'chrisbra/csv.vim'
   Plugin 'darfink/vim-plist'
+  Plugin 'python-mode/python-mode'
 
   " Colorschemes
   Plugin 'altercation/vim-colors-solarized.git'
-  Plugin 'tpope/vim-vividchalk'
-  Plugin 'vim-scripts/Zenburn'
-  Plugin 'chriskempson/base16-vim'
-  Plugin 'nanotech/jellybeans.vim'
-  Plugin 'junegunn/seoul256.vim'
-  Plugin 'tomasr/molokai'
 
   " Some additional plugins
   Plugin 'scrooloose/nerdcommenter'
-  Plugin 'powerline/powerline'
+  "Plugin 'powerline/powerline'
   "Plugin 'lervag/vim-latex'
-  Plugin 'terryma/vim-expand-region'
 
   " Plugins to only load on OS X
   if has("unix")
