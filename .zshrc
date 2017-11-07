@@ -28,6 +28,7 @@ export PYTHONSTARTUP=$HOME/.pythonrc
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 export HOMEBREW_BUILD_FROM_SOURCE=1
 export HOMEBREW_NO_ANALYTICS=1
+export CLICOLOR=1
 
 export PATH=$(brew --prefix)/opt/python/libexec/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
@@ -45,7 +46,8 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias gtwhois="whois -h who.is.gatech.edu $1"
-alias ls="ls -lah"
+alias ls="ls -lahG"
+alias diff="diff -u"
 
 # Fix numeric keypad
 # 0 . Enter
