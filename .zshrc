@@ -115,6 +115,3 @@ bindkey -s "^[Oo" "/"
 # Fix history substring search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-
-PERL_MB_OPT="--install_base \"/Users/kylekoza/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/kylekoza/perl5"; export PERL_MM_OPT;
