@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+source ~/.exports
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="kardan"
@@ -22,22 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew osx python pip screen vi-mode vundle web-search history-substring-search brew-cask nmap aws redis-cli virtualenvwrapper)
 
-# User configuration
-export WORKON_HOME=$HOME/Envs
-export PYTHONSTARTUP=$HOME/.pythonrc
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
-export HOMEBREW_BUILD_FROM_SOURCE=1
-export HOMEBREW_NO_ANALYTICS=1
-export CLICOLOR=1
-
 export PATH=$(brew --prefix)/opt/python/libexec/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
 
 source $ZSH/oh-my-zsh.sh
 
