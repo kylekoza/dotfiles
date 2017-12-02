@@ -1,0 +1,4 @@
+awscli==1.14.2
+requests==2.18.4
+virtualenv==15.1.0
+virtualenvwrapper==4.8.2
