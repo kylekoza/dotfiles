@@ -7,6 +7,7 @@ git remote add -t \* -f origin http://www.github.com/kylekoza/dotfiles
 git checkout master
 git branch --set-upstream-to=origin/master master
 git pull origin master
+git remote set-url origin git@github.com:kylekoza/dotfiles.git
 
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
