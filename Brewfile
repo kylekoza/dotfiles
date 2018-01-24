@@ -20,10 +20,10 @@ brew "zsh"
 brew "wallix/awless/awless"
 cask "alfred"
 cask "gpg-suite"
-cask "iterm2"
 cask "little-snitch"
 cask "omnifocus"
 cask "sequel-pro"
+cask "vmware-fusion"
 cask "wireshark"
 mas "1Password", id: 443987910
 mas "Evernote", id: 406056744
