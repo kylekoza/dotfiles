@@ -23,6 +23,7 @@ cask "gpg-suite"
 cask "little-snitch"
 cask "omnifocus"
 cask "sequel-pro"
+cask "spotify"
 cask "vmware-fusion"
 cask "wireshark"
 mas "1Password", id: 443987910
