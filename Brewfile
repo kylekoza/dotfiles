@@ -6,7 +6,7 @@ brew "cmake"
 brew "coreutils"
 brew "git"
 brew "python"
-brew "python3"
+brew "python2"
 brew "macvim", args: ["with-override-system-vim"]
 brew "mas"
 brew "mysql-connector-c"
@@ -30,11 +30,13 @@ cask "wireshark"
 mas "1Password", id: 443987910
 mas "Evernote", id: 406056744
 mas "Keynote", id: 409183694
+mas "Marked 2", id: 890031187
 mas "Mactracker", id: 430255202
 mas "Microsoft Remote Desktop", id: 715768417
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Patterns", id: 429449079
 mas "Remote Desktop", id: 409907375
+mas "Serial", id: 877615577
 mas "Slack", id: 803453959
 mas "Xcode", id: 497799835
