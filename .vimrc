@@ -6,6 +6,8 @@ filetype off                   " required!
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
+silent! py3 pass
+
 if exists(':Plugin')
   " let Vundle manage Vundle - must be first!
   " use commands PluginInstall, PluginUpdate, PluginClean
