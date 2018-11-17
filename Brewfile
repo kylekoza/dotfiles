@@ -31,7 +31,7 @@ cask "spotify"
 cask "tableau"
 cask "vmware-fusion"
 cask "wireshark"
-mas "1Password", id: 443987910
+mas "1Password 7", id: 1333542190
 mas "Evernote", id: 406056744
 mas "Keynote", id: 409183694
 mas "Mactracker", id: 430255202
