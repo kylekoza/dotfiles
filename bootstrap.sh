@@ -3,7 +3,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 cd ~
 git init .
-git remote add -t \* -f origin http://www.github.com/kylekoza/dotfiles
+git remote add -t \* -f origin https://www.github.com/kylekoza/dotfiles
 git checkout master
 git branch --set-upstream-to=origin/master master
 git pull origin master
@@ -28,11 +28,8 @@ cd ~/.vim/bundle/youcompleteme
 python install.py
 cd ~
 
-which zsh | sudo tee -a /etc/shells
-sudo sh -c 'chsh -s $(which zsh) $SUDO_USER'
-
 # Global Python
 pip2 install python-ldap --global-option=build_ext --global-option="-I$(xcrun --show-sdk-path)/usr/include/sasl"
 pip2 install -r requirements.txt
-
-source .macos
+pip install python-ldap --global-option=build_ext --global-option="-I$(xcrun --show-sdk-path)/usr/include/sasl"
+pip install -r requirements.txt

@@ -1,4 +1,4 @@
-awscli==1.14.63
-requests==2.18.4
-virtualenv==15.2.0
-virtualenvwrapper==4.8.2
+awscli
+requests
+virtualenv
+virtualenvwrapper
