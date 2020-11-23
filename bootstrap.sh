@@ -1,5 +1,5 @@
 softwareupdate -ia
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew doctor
 cd ~
 git init .
@@ -29,7 +29,7 @@ python install.py
 cd ~
 
 # Global Python
-pip2 install python-ldap --global-option=build_ext --global-option="-I$(xcrun --show-sdk-path)/usr/include/sasl"
-pip2 install -r requirements.txt
-pip install python-ldap --global-option=build_ext --global-option="-I$(xcrun --show-sdk-path)/usr/include/sasl"
-pip install -r requirements.txt
+#pip2 install python-ldap --global-option=build_ext --global-option="-I$(xcrun --show-sdk-path)/usr/include/sasl"
+#pip2 install -r requirements.txt
+#pip install python-ldap --global-option=build_ext --global-option="-I$(xcrun --show-sdk-path)/usr/include/sasl"
+#pip install -r requirements.txt
