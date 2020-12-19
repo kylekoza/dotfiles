@@ -11,6 +11,7 @@ ZSH_THEME="kardan"
 export UPDATE_ZSH_DAYS=2
 # Update without asking
 DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE=true
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
@@ -24,7 +25,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew osx python pip screen vi-mode vundle web-search history-substring-search brew-cask nmap aws redis-cli virtualenvwrapper)
+plugins=(git brew osx python pip screen vi-mode vundle web-search history-substring-search nmap aws redis-cli virtualenvwrapper)
 
 export PATH=$(brew --prefix)/opt/python/libexec/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
