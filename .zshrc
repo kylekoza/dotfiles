@@ -27,6 +27,12 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git brew macos python pip screen vi-mode vundle web-search history-substring-search nmap aws redis-cli virtualenvwrapper)
 
+export HOMEBREW_PREFIX="/opt/homebrew";
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/opt/homebrew";
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 export PATH=$(brew --prefix)/opt/python/libexec/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 source $ZSH/oh-my-zsh.sh
